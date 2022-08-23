@@ -1,0 +1,9 @@
+@import './sidebar.scss';
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}

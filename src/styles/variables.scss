@@ -1,0 +1,79 @@
+// base color
+$blue: #01357d;
+$light-blue: #3A71A8;
+$red: #f44b5e;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow: #FEC171;
+$gold: #D59200;
+$panGreen: #30B08F;
+
+$color-theme: #5632fe;
+$color-success: #1ac8af;
+$color-danger: #ff4c77;
+$color-warning: #ffae45;
+$color-info: #909399;
+
+$color-bg: #f7f7fa;
+$color-theme-bg: #eeebff;
+//$color-border: #e6e6e6;
+$color-border: #f6f6f8;
+$color-label: #606266;
+
+$color-theme-light-bg: #f8f8ff;
+$color-theme-text-dark-light: #767283;
+
+$color-text-theme: #111A2D;
+$color-text-sub: #747B8B;
+$color-title-theme: #0B1C3F;
+
+$color-price: #ff4c77;
+
+
+// sidebar
+//$menuText:#bfcbd9;
+//$menuActiveText:#409EFF;
+//$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+//
+//$menuBg:#001427;
+//$menuHover:#263445;
+//
+//$subMenuBg: transparent;
+//$subMenuHover: rgba(0, 42, 81, 0.82);
+
+//$menuText: $color-theme-text-dark-light;
+//$menuActiveText: $color-theme;
+//$subMenuActiveText: #000; // https://github.com/ElemeFE/element/issues/12951
+//$menuBg: white;
+//$menuHover: rgba(255, 255, 255, 0.15);
+//$subMenuBg: transparent;
+//$subMenuHover: rgba(255, 255, 255, 0.15);
+
+$menuText: rgba(255, 255, 255, .6);
+$menuActiveText: white;
+$subMenuActiveText: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+$menuBg: #1D1652;
+$menuHover: rgba(255, 255, 255, 0.15);
+$subMenuBg: transparent;
+$subMenuHover: rgba(255, 255, 255, 0.15);
+
+$sideBarWidth: 160px;
+$sideBarLeft: 10px;
+//$sideBarTop: 60px; // default: 50px
+$sideBarTop: 15px; // default: 50px
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
