@@ -19,7 +19,6 @@
 <script>
 import SidebarItem from './SidebarItem'
 import variables from '@/styles/variables.scss'
-import { constantRoutes } from '@/router'
 
 export default {
   components: { SidebarItem },
@@ -35,11 +34,14 @@ export default {
     },
     variables () {
       return variables
+    },
+    permission_routes () {
+      return this.$store.state.routes
     }
   },
   data () {
     return {
-      permission_routes: constantRoutes
+      // permission_routes: routerList
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-<div>package-list</div>
+  <div>套餐列表</div>
 </template>
 
 <script>

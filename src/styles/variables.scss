@@ -60,8 +60,7 @@ $subMenuHover: rgba(255, 255, 255, 0.15);
 
 $sideBarWidth: 160px;
 $sideBarLeft: 10px;
-//$sideBarTop: 60px; // default: 50px
-$sideBarTop: 15px; // default: 50px
+$sideBarTop: 60px; // default: 50px
 
 // the :export directive is the magic sauce for webpack
 // https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
