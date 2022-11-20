@@ -1,20 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/views/Home'
 import Layout from '@/layout/index'
 
-/**
- * 静态路由，所有用户都会有的路由
- * @type {*[]}
- */
-export const constantRoutes = [
+export const routes = [
   {
     path: '/',
     component: Layout,
     meta: { title: '首页', icon: 'el-icon-menu' },
     children: [{
       path: 'home',
-      component: Home,
+      component: () => import('@/views/Home'),
       meta: { title: '首页', icon: 'el-icon-menu' }
     }]
   },
@@ -38,7 +33,7 @@ export const constantRoutes = [
     meta: { title: '关于', icon: 'el-icon-menu' },
     children: [{
       path: 'index',
-      component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+      component: () => import('@/views/About'),
       meta: { title: '关于', icon: 'el-icon-menu' }
     }]
   }
@@ -48,7 +43,7 @@ Vue.use(Router)
 
 const createRouter = () => new Router({
   scrollBehavior: () => ({ y: 0 }),
-  routes: constantRoutes
+  routes
 })
 
 const router = createRouter()
